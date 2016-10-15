@@ -1,7 +1,7 @@
 <?php
 ob_start();
-define('API_KEY','XXXX');
-$the_admin_id = 0;
+define('API_KEY','240072112:AAEe70eXpTc9XD3gN6aAZmOdDKxEOg8zZEk');
+$the_admin_id = 188383245;
 
 file_put_contents("count",file_get_contents("count")+1);
 
@@ -1296,7 +1296,7 @@ https://telegram.me/sscapachebot
                         ]);
                         $t = time().'.jpg';
                         $furl = 'http://bots.mhr-developer.com/images/'.$t;
-                        $fule = 'https://api.telegram.org/file/bot188540245:AAGGTpBT2UIDeuvRMfxq54KsrJsi05URSHI/'.trim($imag->result->file_path,"\\/");
+                        $fule = 'https://api.telegram.org/file/bot240072112:AAEe70eXpTc9XD3gN6aAZmOdDKxEOg8zZEk/'.trim($imag->result->file_path,"\\/");
                         $file_ext = end(explode(".",$fule));
                         if($file_ext == "jpg" || $file_ext == "jpeg") {
                             file_put_contents("/var/www/html/images/".$t, fopen($fule, 'r'));
